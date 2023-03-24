@@ -15,7 +15,7 @@ jobs:
         node: [10.x, 12.x, 14.x]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - run: node --version
@@ -25,7 +25,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: '12.x'
       - run: npm install
@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: '14.x'
       - run: npm install
@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: '14.x'
       - run: npm install
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: 14
       - run: npm install
